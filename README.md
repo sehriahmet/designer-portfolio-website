@@ -17,7 +17,7 @@ This is a portfolio website for Fatih Eren, showcasing their design works, skill
 
 ## Live Demo
 
-You can view the website live at [this link](https://sehriahmet.github.io/fey-website/).
+You can view the website live at [this link](https://sehriahmet.github.io/designer-portfolio-website/).
 
 ## Contributing
 
