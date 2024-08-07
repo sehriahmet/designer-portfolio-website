@@ -14,13 +14,122 @@ header {
     display: flex;
     flex-direction: row;
     width: 100%;
-    height: 82px;
+    height: 5.125em;
     justify-content: space-between;
 }
 
+.animation-elements {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    font-weight: normal;
+    font-size: 1.250em;
+}
+
+.name1, .name2, .name3 {
+    margin: 0.125em;
+}
+
+.name1 {
+    animation: name1Animation ease-in 3s;
+}
+
+@keyframes name1Animation {
+
+    0% {
+        transform: translate(-60em, 0px);
+    }
+
+    20% {
+        transform: translate(0.9em, 0);
+    }
+
+    25% {
+        transform: translate(0, 0);
+    }
+
+    85% {
+        transform: translate(0, 0);
+    }
+
+    100% {
+        transform: translate(0, -100em);
+    }
+
+}
+
+.name2 {
+    animation: name2Animation ease-in 3s;
+}
+
+@keyframes name2Animation {
+    0% {
+        transform: translate(0, -50em);
+    }
+
+    25% {
+        transform: translate(0,-50em);
+    }
+
+    40% {
+        transform: translate(0, -20em);
+    }
+
+    45% {
+        transform: translate(0, 0.9em);
+    }
+
+    50% {
+        transform: translate(0, 0);
+    }
+
+    85% {
+        transform: translate(0, 0);
+    }
+
+    100% {
+        transform: translate(0, -100em);
+    }
+
+}
+
+.name3 {
+    animation: name3Animation ease-in 3s;
+}
+
+@keyframes name3Animation {
+    0% {
+        transform: translate(60em, 0);
+    }
+
+    50% {
+        transform: translate(60em, 0);
+    }
+
+    70% {
+        transform: translate(-0.9em, 0);
+    }
+
+    75% {
+        transform:translate(0, 0);
+    }
+
+    85% {
+        transform: translate(0, 0);
+    }
+
+    100% {
+        transform: translate(0, -100em);
+    }
+
+}
+
+
 .title-container {
-    padding-left: 60px;
-    padding-top: 18px;
+    padding-left: 3.75em;
+    padding-top: 1.125em;
 }
 
 .title-container {
@@ -29,15 +138,15 @@ header {
 }
 
 .title-container-name {
-    font-size: 24px;
+    font-size: 1.5em;
     justify-content: start;
 }
 
 button {
     background-color: #F8F8F9;
     border: none;
-    padding-right: 20px;
-    padding-left: 20px;
+    padding-right: 1.25em;
+    padding-left: 1.25em;
     font-size: 24;
     font-weight: normal;
     cursor: pointer;
@@ -50,35 +159,86 @@ button:hover {
 .buttons-container {
     display: flex;
     justify-content: center;
-    margin-right: 60px;
+    margin-right: 3.75em;
 }
+
 
 .main-continer {
-    display: flex;
-    padding-left: 60px;
-    padding-right: 60px;
+    display: flex !important;
+    flex-direction: column;
+    align-items: center;
 }
 
-
 .index-container {
-    padding-left: 60px;
-    padding-right: 60px;
-    padding-bottom: 100px;
+    padding: 10em 0em 6.25em 3.75em; /* top right, bottom, left */
     display: flex;
-    flex-direction: row;
-    padding-top: 160px;
+    flex-direction: column;
+    align-items: center;
     justify-content: space-between;
+    width: 100%;
+}
+
+.index-description, .index-header {
+    max-width: 15em; /* Make sure content doesn't overflow */
+    max-height: 10.9375em;
+    text-align: center; /* Center text */
+    margin-bottom: 1em; /* Space between elements */
 }
 
 .index-description {
-    height: 175px;
-    width: 240px;
+    max-height: 10.9375em;
+    font-size: 1rem;
 }
 
 .index-header {
-    height: 174px;
-    width: 757px;
+    max-height: 10.9375em;
     font-weight: normal;
-    font-size: 64px;
+    font-size: 2.5rem;
+    margin-left: 0;
 }
 
+@media (min-width: 768px) {
+    
+    .index-container {
+        flex-direction: row; 
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+
+    .index-description {
+        max-width: 15em;
+        text-align: left;
+    }
+
+    .index-header {
+        max-width: 47.3125em;
+        text-align: left;
+        margin-left: 5em;
+        font-size: 4em;
+    }
+
+}
+
+@media (max-width: 767px) {
+
+    .main-continer {
+        width: 100%;
+        height: 100%;
+    }
+
+    .title-container {
+        padding: 1em;
+    }
+
+    .buttons-container {
+        margin-right: 0;
+    }
+    .index-container {
+        padding: 2em 1em;
+    }
+
+    .index-header {
+        font-size: 2em;
+    }
+
+}
