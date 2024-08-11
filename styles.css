@@ -7,6 +7,7 @@
 
 body {
     background-color: #F8F8F9;
+    min-height: 100vh;
 }
 
 header {
@@ -17,6 +18,116 @@ header {
     height: 5.125em;
     justify-content: space-between;
 }
+
+
+
+.title-container {
+    padding-left: 3.75em;
+    padding-top: 1.125em;
+}
+
+.title-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.title-container-name {
+    font-size: 1.5em;
+    justify-content: start;
+}
+
+button {
+    background-color: #F8F8F9;
+    border: none;
+    padding-right: 1.25em;
+    padding-left: 1.25em;
+    font-size: 24;
+    font-weight: normal;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #f3f3f3;
+}
+
+.buttons-container {
+    display: flex;
+    justify-content: center;
+    margin-right: 3.75em;
+}
+
+.main-continer {
+    display: flex !important;
+    flex-direction: column;
+    align-items: center;
+}
+
+.index-container {
+    padding: 10em 0em 6.25em 3.75em; /* top right, bottom, left */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.index-description, .index-header {
+    max-width: 15em; /* Make sure content doesn't overflow */
+    max-height: 10.9375em;
+    text-align: center; /* Center text */
+    margin-bottom: 1em; /* Space between elements */
+}
+
+.index-description {
+    max-height: 10.9375em;
+    font-size: 1rem;
+}
+
+.index-header {
+    max-height: 10.9375em;
+    font-weight: normal;
+    font-size: 2.5rem;
+    margin-left: 0;
+}
+
+footer {
+    background-color: #FFFFFF;
+    width: 100%;
+    bottom: 0;
+    min-height: 8em;
+}
+
+footer .titles {
+    padding-top: 2em;
+    margin-right: 3.75em;
+    margin-left: 3.75em;
+    display: flex;
+    justify-content: space-between;
+}
+
+footer .titles .title {
+    display: flex;
+    justify-content: end;
+}
+
+footer .buttons {
+    display: flex;
+    justify-content: center;
+    margin-left: 3.75em;
+    margin-right: 3.75em;
+    padding-top: 1.5em;
+    padding-bottom: 1.5em;
+    background-color: #FFFFFF;
+}
+
+footer .buttons .linkedin {
+    padding: 0.5em;
+    border: solid 2px;
+    border-radius: 0.5em;
+    font-size: 1rem;
+    font-family: "Manrope ExtraLight";
+}
+
 
 .animation-elements {
     display: flex;
@@ -124,77 +235,6 @@ header {
         transform: translate(0, -100em);
     }
 
-}
-
-
-.title-container {
-    padding-left: 3.75em;
-    padding-top: 1.125em;
-}
-
-.title-container {
-    display: flex;
-    flex-direction: column;
-}
-
-.title-container-name {
-    font-size: 1.5em;
-    justify-content: start;
-}
-
-button {
-    background-color: #F8F8F9;
-    border: none;
-    padding-right: 1.25em;
-    padding-left: 1.25em;
-    font-size: 24;
-    font-weight: normal;
-    cursor: pointer;
-}
-
-button:hover {
-    background-color: #f3f3f3;
-}
-
-.buttons-container {
-    display: flex;
-    justify-content: center;
-    margin-right: 3.75em;
-}
-
-
-.main-continer {
-    display: flex !important;
-    flex-direction: column;
-    align-items: center;
-}
-
-.index-container {
-    padding: 10em 0em 6.25em 3.75em; /* top right, bottom, left */
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    width: 100%;
-}
-
-.index-description, .index-header {
-    max-width: 15em; /* Make sure content doesn't overflow */
-    max-height: 10.9375em;
-    text-align: center; /* Center text */
-    margin-bottom: 1em; /* Space between elements */
-}
-
-.index-description {
-    max-height: 10.9375em;
-    font-size: 1rem;
-}
-
-.index-header {
-    max-height: 10.9375em;
-    font-weight: normal;
-    font-size: 2.5rem;
-    margin-left: 0;
 }
 
 @media (min-width: 768px) {
