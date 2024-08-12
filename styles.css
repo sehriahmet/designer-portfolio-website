@@ -152,6 +152,37 @@ button:hover {
     transform: translate(-50%, -50%);
 }
 
+.assets-container .main-lumpy-img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1.15);
+    filter: blur(0);
+    transition: transform 0.5s ease, filter 0.5s ease;
+}
+
+.assets-container:hover .main-lumpy-img {
+    transform: translate(-50%, -50%) scale(1);
+    filter: blur(0.2em);
+}
+
+.assets-container .lumpy-images {
+    position: absolute;
+    bottom: 3em;
+    left: 3em;
+}
+
+.assets-container .lumpy-images .lumpy-animation {
+    display: none;
+}
+
+.assets-container:hover .lumpy-images .lumpy-animation{
+    display: block;
+}
+
+.assets-container:hover .lumpy-images .lumpy-img {
+    display: none;
+}
 
 footer {
     background-color: #FFFFFF;
@@ -188,7 +219,7 @@ footer .buttons .linkedin {
     border: solid 2px;
     border-radius: 0.5em;
     font-size: 1rem;
-    font-family: "Manrope ExtraLight";
+    opacity: 70%;
 }
 
 
