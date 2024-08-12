@@ -8,6 +8,7 @@
 body {
     background-color: #F8F8F9;
     min-height: 100vh;
+    overflow-x: hidden;
 }
 
 header {
@@ -92,7 +93,7 @@ button:hover {
 
 .assets-container {
     position: relative;
-    height: 75vh;
+    height: 85dvh;
     background-color: #FFFFFF;
     margin: 0 3.75em 1.5em 3.75em; /*top right bot left*/
     border-radius: 1em;
