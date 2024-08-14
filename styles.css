@@ -112,7 +112,7 @@ button:hover {
 .assets-container .metu-odyssey img {
     margin-left: 4em;
     margin-right: 4em;
-    width: 18vw;
+    width: 33dvh;
     height: 69dvh;
 }
 
@@ -165,7 +165,7 @@ button:hover {
     transform: translate(-50%, -50%) scale(1.15);
     filter: blur(0);
     transition: transform 0.5s ease, filter 0.5s ease;
-    width: 35vw;
+    width: 60dvh;
     height: 70dvh;
 }
 
@@ -178,7 +178,11 @@ button:hover {
     position: absolute;
     bottom: 3em;
     left: 3em;
-    width: 5vw;
+}
+
+.assets-container .lumpy-images .lumpy-img,
+.assets-container .lumpy-images .lumpy-animation {
+    width: 18dvh;
     height: 17dvh;
 }
 
@@ -200,7 +204,7 @@ button:hover {
     left: 50%;
     transform: translate(-50%, -50%) scale(1.15);
     filter: blur(0);
-    width: 15vw;
+    width: 25dvh;
     height: 52dvh;
     z-index: 2;
     transition: transform 0.5s ease, filter 0.5s ease;
