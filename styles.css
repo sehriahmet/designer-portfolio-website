@@ -456,4 +456,13 @@ footer .buttons .linkedin {
         scale: 1.3;
     }
 
+    footer .titles .cc,
+    footer .titles .title {
+        display: none;
+    }
+
+    footer .titles {
+        justify-content: center;
+    }
+
 }
